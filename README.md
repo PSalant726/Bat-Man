@@ -10,7 +10,7 @@ A clone of the popular arcade game Pac-Man, with an awesome Batman theme.
   1. Joker - Moves randomly throughout the maze. Moves at 100% of Batman's speed.
   2. Bane - Attempts to position himself behind Batman and chase him throughout the maze. Moves at 90% of Batman's speed.
   3. Penguin - Moves away from Batman. Moves at 90% of Batman's speed
-  4. Riddler - Attempts to position himself in front of Batman until he comes within 10 tiles of Batman, then flees. Moves at 110% of Batman's speed.
+  4. Riddler - Attempts to position himself in front of Batman until he comes within 10 tiles of Batman, then flees until he is 30 tiles away from Batman. Moves at 110% of Batman's speed.
 4. Four larger blinking Batman logos, positioned near the corners of the maze. Collecting these activate the bat signal for 20 seconds, which reduces each enemy's move speed by 10%, causes them to become vulnerable to Batman, and forces them to head towards Arkham Asylum. This area is located at the center of the maze, and is not accessible to Batman.
 5. When an enemy is attacked by Batman (occupies the same maze tile as Batman while the bat signal is activated), their eyes quickly scurry to Arkham Asylum, where they remain for the duration of the bat signal. Once the bat signal goes out, their bodies are restored and they re-enter the maze.
 
