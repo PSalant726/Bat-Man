@@ -23,6 +23,7 @@ var NONE        = 4,
 
 Pacman.FPS = 30;
 
+// Villain
 Pacman.Ghost = function (game, map, color) {
 
     var position  = null,
@@ -277,6 +278,7 @@ Pacman.Ghost = function (game, map, color) {
     };
 };
 
+// Batman
 Pacman.User = function (game, map) {
 
     var position  = null,
@@ -530,6 +532,7 @@ Pacman.User = function (game, map) {
     };
 };
 
+// Maze
 Pacman.Map = function (size) {
 
     var height    = null,
@@ -689,6 +692,7 @@ Pacman.Map = function (size) {
     };
 };
 
+// Audio 
 Pacman.Audio = function(game) {
 
     var files          = [],
