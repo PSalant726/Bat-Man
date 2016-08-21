@@ -1,36 +1,41 @@
-# Bat-Man
-A clone of the popular arcade game Pac-Man, with an awesome Batman theme.
+# Pac-Man
+A clone of the popular arcade game Pac-Man.
 
-[Bat-Man Live](https://bat-man.herokuapp.com)
+[Pac-Man Live](https://pac-man.philsalant.com)
 
 ### Features and Gameplay
-1. The streets of Gotham City, a randomly generated closed-loop maze in which the game takes place.
-2. A Batman-themed Pac-Man character, controlled by the player using the arrow keys. He traverses the maze collecting the mini Batman logos that add to his score. The player beats the level when all Batman logos have been collected.
-3. Four enemy characters that move about the maze. The player loses if Batman occupies the same maze tile as any of these characters, provided the bat signal is not currently shining over the streets of Gotham City. The enemies are:
-  1. Joker - Moves randomly throughout the maze. Moves at 100% of Batman's speed.
-  2. Bane - Attempts to position himself behind Batman and chase him throughout the maze. Moves at 90% of Batman's speed.
-  3. Penguin - Moves away from Batman. Moves at 90% of Batman's speed
-  4. Riddler - Attempts to position himself in front of Batman until he comes within 10 tiles of Batman, then flees until he is 30 tiles away from Batman. Moves at 110% of Batman's speed.
-4. Four larger blinking Batman logos, positioned near the corners of the maze. Collecting these activate the bat signal for 20 seconds, which reduces each enemy's move speed by 10%, causes them to become vulnerable to Batman, and forces them to head towards Arkham Asylum. This area is located at the center of the maze, and is not accessible to Batman.
-5. When an enemy is attacked by Batman (occupies the same maze tile as Batman while the bat signal is activated), their eyes quickly scurry to Arkham Asylum, where they remain for the duration of the bat signal. Once the bat signal goes out, their bodies are restored and they re-enter the maze.
+1. A randomly generated closed-loop maze in which the game takes place.
+2. A Pac-Man character, controlled by the player using the arrow keys. He traverses the maze collecting the dots that add to his score. The player beats the level when all dots have been collected.
+3. Four enemy characters that move about the maze. The player loses if Pac-Man occupies the same maze tile as any of these characters, provided a large dot has not been recently collected. The enemies are:
+  1. Inky - Moves randomly throughout the maze. Moves at 100% of Pac-Man's speed.
+  2. Blinky - Attempts to position himself behind Pac-Man and chase him throughout the maze. Moves at 90% of Pac-Man's speed.
+  3. Pinky - Moves away from Pac-Man. Moves at 90% of Pac-Man's speed
+  4. Dot - Attempts to position himself in front of Pac-Man until he comes within 10 tiles of Pac-Man, then flees until he is 30 tiles away from Pac-Man. Moves at 110% of Pac-Man's speed.
+4. Four larger blinking dots, positioned near the corners of the maze. Collecting these activate enemy vulnerability mode for 20 seconds, which reduces each enemy's move speed by 10%, causes them to become vulnerable to Pac-Man, and forces them to head towards the jail. This area is located at the center of the maze, and is not accessible to Pac-Man.
+5. When an enemy is attacked by Pac-Man (occupies the same maze tile as Pac-Man while vulnerability mode is activated), their eyes quickly scurry to the jail, where they remain for the duration of vulnerability mode. Once vulnerability mode ends, their bodies are restored and they re-enter the maze.
 
 ### Wireframes
 [View wireframes](./docs/wireframes/)
 
+### Technologies and Techniques Used
+- HTML5 Canvas
+- JavaScript
+- Object-Oriented Programming
+
 ### Timeline
 #### Phase 1
-- [ ] Maze, Batman, and Enemy creation
-- [ ] User input and logo consumption
+- [ ] Maze, Pac-Man, and Enemy creation
+- [ ] User input and dot consumption
 - [ ] UI framework (Title, Controls, Remaining Lives, High Scores)
 
 #### Phase 2
-- [ ] Scoring based on Batman logo consumption, enemies attacked
-- [ ] Decreased bat signal duration based on level
-- [ ] Active bat signal mode
+- [ ] Scoring based on dot consumption, enemies attacked
+- [ ] Decreased vulnerability mode duration based on level
+- [ ] Active vulnerability mode
 - [ ] Attacking and being attacked by enemies
 
 #### Phase 3
-- [ ] Game Over screen for when Batman is attacked without the bat signal active
-- [ ] Victory screen for when all Batman logos have been cleared
+- [ ] Game Over screen for when Pac-Man is attacked without vulnerability mode active
+- [ ] Victory screen for when all dots have been cleared
 - [ ] High score screen (cookies)
 - [ ] Music and sound effects with mute button
