@@ -4,10 +4,16 @@
     <meta charset="utf-8"/>
     <style type="text/css">
       @font-face {
-	    font-family: 'BDCartoonShoutRegular';
-      src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
-	    font-weight: normal;
-	    font-style: normal;
+  	    font-family: 'BDCartoonShoutRegular';
+        src: url('BD_Cartoon_Shout-webfont.ttf') format('truetype');
+  	    font-weight: normal;
+  	    font-style: normal;
+      }
+      @font-face {
+        font-family: 'PacFont';
+        src: url('crackman.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
       }
       #pacman {
         height:900px;
@@ -20,13 +26,16 @@
       }
       .pacman-container {
         border: 3px solid yellow;
+        border-radius: 10px;
         width: 690px;
         height: 830px;
       }
       h1 {
         font-family: PacFont;
+        font-size: 40px;
         text-align:center;
         color: yellow;
+        margin: 10px 0;
       }
       body {
         margin: 0 auto;
@@ -39,7 +48,7 @@
       }
     </style>
   </head>
-  <h1>Pac-Man</h1>
+  <h1>PAC-MAN</h1>
   <body>
     <div class="pacman-container">
       <div id="pacman"></div>

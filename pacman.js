@@ -112,7 +112,7 @@
 
 	PlayGame.prototype.drawScore = function (text, position) {
 	  this.ctx.fillStyle = "#FFFFFF";
-	  this.ctx.font = "12px BDCartoonShoutRegular";
+	  this.ctx.font = "12px PacFont";
 	  this.ctx.fillText(
 	    text,
 	    (position.new.x / 10) * this.map.blockSize,
@@ -122,10 +122,10 @@
 
 	PlayGame.prototype.dialog = function (text) {
 	  this.ctx.fillStyle = "#FFFF00";
-	  this.ctx.font = "24px BDCartoonShoutRegular";
+	  this.ctx.font = "36px PacFont";
 	  let width = this.ctx.measureText(text).width,
 	      x = ((this.map.width * this.map.blockSize) - width) / 2;
-	  this.ctx.fillText(text, x, (this.map.height * 10) + 8);
+	  this.ctx.fillText(text, x, (this.map.height * 17) + 8);
 	};
 
 	PlayGame.prototype.soundDisabled = function () {
@@ -223,7 +223,7 @@
 	  this.ctx.fillText("s", 20, textBase - 3);
 
 	  this.ctx.fillStyle = "#FFFF00";
-	  this.ctx.font = "14px BDCartoonShoutRegular";
+	  this.ctx.font = "24px PacFont";
 	  this.ctx.fillText("Score: " + this.user.theScore(), 50, textBase);
 	  this.ctx.fillText("Level: " + this.level, 550, textBase);
 	};
@@ -283,7 +283,7 @@
 	  } else if (this.state === Util.WAITING && this.stateChanged) {
 	    this.stateChanged = false;
 	    this.map.draw(this.ctx);
-	    this.dialog("Press N to Start a New Game!");
+	    this.dialog("PRESS N TO START A NEW GAME!");
 	  } else if (this.state === Util.EATEN_PAUSE &&
 	    (this.tick - this.timerStart) > (Game.FPS / 3)) {
 	    this.map.draw(this.ctx);
@@ -308,7 +308,7 @@
 	      if (diff !== this.lastTime) {
 	        this.lastTime = diff;
 	        this.map.draw(this.ctx);
-	        this.dialog("Starting in: " + diff);
+	        this.dialog("STARTING IN: " + diff);
 	      }
 	    }
 	  }
@@ -369,7 +369,7 @@
 	  }
 
 	  this.map.draw(this.ctx);
-	  this.dialog("Loading...");
+	  this.dialog("LOADING...");
 
 	  let extension = "ogg";
 	  let audio_files = [
@@ -394,7 +394,7 @@
 	};
 
 	PlayGame.prototype.loaded = function () {
-	  this.dialog("Press N to Start");
+	  this.dialog("PRESS N TO START");
 	  document.addEventListener("keydown", this.keyDown.bind(this), true);
 	  document.addEventListener("keypress", this.keyPress.bind(this), true);
 	  this.timer = window.setInterval(this.mainLoop.bind(this), 1000 / Game.FPS);
