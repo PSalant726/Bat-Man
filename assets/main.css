@@ -5,9 +5,16 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'Arcade';
+  src: url('prstartk.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 #pacman {
-  height:900px;
-  width:684px;
+  height:700px;
+  width:484px;
 }
 
 #shim {
@@ -19,13 +26,14 @@
 .pacman-container {
   border: 3px solid yellow;
   border-radius: 10px;
-  width: 690px;
-  height: 830px;
+  height: 595px;
+  width: 485px;
+  margin: 0 auto;
 }
 
 h1 {
   font-family: PacFont;
-  font-size: 40px;
+  font-size: 48px;
   text-align:center;
   color: yellow;
   margin: 10px 0;
@@ -43,23 +51,39 @@ a {
 }
 
 .links {
-  float: left;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  transform: translate(615px, -385px);
+  width: 156px;
+  border: 3px solid white;
+  padding: 10px 20px;
   list-style: none;
+  font-family: Arcade;
+  line-height: 30px;
+  text-align: center;
 }
 
 .link {
-  float: left;
-  margin-right: 20px;
-  margin-top: 10px;
-}
-
-.link > a {
   color: yellow;
   text-decoration: underline;
-  margin: 0 69px;
 }
 
 .instructions {
-  color: yellow;
-  font-size: 20px;
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  transform: translate(-150px, 120px);
+  width: 156px;
+  border: 3px solid white;
+  padding: 10px 30px;
+  list-style: none;
+  font-family: Arcade;
+  line-height: 18px;
+  text-align: center;
+}
+
+.underline {
+  text-decoration: underline;
+  font-size: 12px;
 }
