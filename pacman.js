@@ -373,12 +373,12 @@
 
 	  let extension = "ogg";
 	  let audio_files = [
-	    ["start", root + "audio/opening_song." + extension],
-	    ["die", root + "audio/die." + extension],
-	    ["eatghost", root + "audio/eatghost." + extension],
-	    ["eatpill", root + "audio/eatpill." + extension],
-	    ["eating", root + "audio/eating.short." + extension],
-	    ["eating2", root + "audio/eating.short." + extension]
+	    ["start", root + "assets/audio/opening_song." + extension],
+	    ["die", root + "assets/audio/die." + extension],
+	    ["eatghost", root + "assets/audio/eatghost." + extension],
+	    ["eatpill", root + "assets/audio/eatpill." + extension],
+	    ["eating", root + "assets/audio/eating.short." + extension],
+	    ["eating2", root + "assets/audio/eating.short." + extension]
 	  ];
 	  this.load(audio_files, function(){ that.loaded(); });
 	};

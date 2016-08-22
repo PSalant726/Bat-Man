@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'PacFont';
+  src: url('crackman.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+#pacman {
+  height:900px;
+  width:684px;
+}
+
+#shim {
+  font-family: PacFont;
+  position:absolute;
+  visibility:hidden
+}
+
+.pacman-container {
+  border: 3px solid yellow;
+  border-radius: 10px;
+  width: 690px;
+  height: 830px;
+}
+
+h1 {
+  font-family: PacFont;
+  font-size: 40px;
+  text-align:center;
+  color: yellow;
+  margin: 10px 0;
+}
+
+body {
+  margin: 0 auto;
+  width: 684px;
+  font-family: sans-serif;
+  background-color: black;
+}
+
+a {
+  text-decoration:none;
+}
+
+.links {
+  float: left;
+  list-style: none;
+}
+
+.link {
+  float: left;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.link > a {
+  color: yellow;
+  text-decoration: underline;
+  margin: 0 69px;
+}
+
+.instructions {
+  color: yellow;
+  font-size: 20px;
+}

@@ -8,6 +8,14 @@
  * do proper ghost mechanics (blinky/wimpy etc)
  */
 
+
+ // // Run using the old bundle file
+ // <script src="assets/pacman_old.js"></script>
+ // <script>
+ //   var el = document.getElementById("pacman");
+ //   window.setTimeout(function () { PACMAN.init(el, "./"); }, 0);
+ // </script>
+
 var NONE        = 4,
     UP          = 3,
     LEFT        = 2,
