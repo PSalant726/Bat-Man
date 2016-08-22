@@ -1,7 +1,7 @@
 # Pac-Man
 A clone of the popular arcade game Pac-Man.
 
-[Pac-Man Live](https://pac-man.philsalant.com)
+[Pac-Man Live](https://www.philsalant.com/Pac-Man)
 
 ## Instructions
 
