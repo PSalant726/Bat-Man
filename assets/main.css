@@ -87,3 +87,10 @@ a {
   text-decoration: underline;
   font-size: 12px;
 }
+
+.author {
+  color: yellow;
+  font-family: Arcade;
+  text-align: center;
+  font-size: 10px;
+}
