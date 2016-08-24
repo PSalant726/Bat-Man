@@ -89,8 +89,9 @@ a {
 }
 
 .author {
-  color: yellow;
+  color: #40FF33;
   font-family: Arcade;
   text-align: center;
   font-size: 10px;
+  margin: -10px 0 10px 0;
 }
